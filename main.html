@@ -1,99 +1,127 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<title >HTML Assignment 3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .middle {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+            background-color: white;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<table border=1>
-		<tr>
-			<td>left</td>
-			<td>middle</td>
-			<td>right</td>
-		</tr>
-		<tr>
-			<td>left</td>
-			<td>middle</td>
-			<td>right</td>
-		</tr>
-		<tr>
-			<td>left</td>
-			<td>middle</td>
-			<td>right</td>
-		</tr>
-	</table>
+    <h1>HTML Assignment #3</h1>
 
-	
-	<table border=1>
-		<tr>
-			<td colspan=6> js</td>
-			
-		</tr>
-		<tr>
-			<td rowspan=4>left</td>
-			<td>middle</td>
-			<td>right</td>
-			<td>left</td>
-			<td>middle</td>
-			<td>right</td>
-		</tr>
-		<tr>
-			
-			<td>middle</td>
-			<td colspan=3 rowspan=2>right</td>
-<!-- 			<td>left</td>
-			<td>middle</td> -->
-			<td>right</td>
-		</tr>
-		<tr>
-			
-			<td></td>
-			<td>right</td>
-<!-- 			<td>left</td>
-			<td>middle</td>
-			<td>right</td> -->
-		</tr>
-		<tr>
-			
-			<td>middle</td>
-			<td>right</td>
-			<td>left</td>
-			<td>middle</td>
-			<td>right</td>
-		</tr>
-		<tr>
-			<td colspan=6>left</td>
-<!-- 			<td>middle</td>
-			<td>right</td>
-			<td>left</td>
-			<td>middle</td>
-			<td>right</td> -->
-		</tr>
-	</table>	
-	<br>
-	<br>
-	
-	<table border=1>
-		<tr>
-			<td colspan=1>ksk</td>
-		</tr>
-		<tr>
-			<td> <img src="https://images.unsplash.com/photo-1682685796014-2f342188a635?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60"></td>
-		</tr>
-		<tr>
-			<td> </td>
-		</tr>
+    <!-- Table 1 -->
+    <table class="middle" id="table-1">
+        <tr>
+            <td id="t11">Row 1, Cell 1</td>
+            <td id="t12">Row 1, Cell 2</td>
+            <td id="t13" class="right">Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td class="right">Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td class="center">Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td id="t-last" class="right middle">Row 3, Cell 3</td>
+        </tr>
+    </table>
 
-		
-	</table>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Table 2 -->
+    <table class="middle" id="table-2">
+        <tr>
+            <td id="t21" colspan="6">This is a merged cell with a colspan of 6</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+            <td>Row 2, Cell 4</td>
+            <td>Row 2, Cell 5</td>
+            <td>Row 2, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+            <td>Row 3, Cell 4</td>
+            <td>Row 3, Cell 5</td>
+            <td>Row 3, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+            <td>Row 4, Cell 4</td>
+            <td>Row 4, Cell 5</td>
+            <td>Row 4, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 5, Cell 1</td>
+            <td>Row 5, Cell 2</td>
+            <td>Row 5, Cell 3</td>
+            <td>Row 5, Cell 4</td>
+            <td>Row 5, Cell 5</td>
+            <td>Row 5, Cell 6</td>
+        </tr>
+        <tr>
+            <td>Row 6, Cell 1</td>
+            <td>Row 6, Cell 2</td>
+            <td>Row 6, Cell 3</td>
+            <td>Row 6, Cell 4</td>
+            <td>Row 6, Cell 5</td>
+            <td>Row 6, Cell 6</td>
+        </tr>
+    </table>
 
+    <!-- Table 3 -->
+    <table class="middle" id="table-3">
+        <tr class="green">
+            <td colspan="2">Green Header</td>
+            <td colspan="2">Green Header</td>
+            <td colspan="2">Green Header</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="blue" id="t-image">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image">
+            </td>
+        </tr>
+        <tr class="blue">
+            <td colspan="2">Blue Footer</td>
+            <td colspan="2">Blue Footer</td>
+            <td colspan="2">Blue Footer</td>
+        </tr>
+    </table>
 </body>
-
 </html>
